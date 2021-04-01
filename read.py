@@ -24,7 +24,7 @@ print(new[1])
 
 
 #d is  string 字串 data 清單
-
+#/ good = [d for d in dat if 'good' in d}
 good = []
 for d in data:
 	if 'good'	in d:
