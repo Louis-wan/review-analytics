@@ -30,4 +30,30 @@ for d in data:
 	if 'good'	in d:
 		good.append(d)
 print('一共有', len(good), '筆數')
-print(good[0])
+print(good[0]
+
+#文字計數
+# word count 數字字典
+wc = {}
+
+for d in data:
+	words = d.split()
+	for word in words:
+		if word in wc:
+			wc[word] += 1
+		else:
+			wc[word] = 1
+for word in wc:
+	if wc[word] > 1000000 :
+		print(word, wc[word])
+print(len(wc))
+
+while True:
+	word = input('請問你查啥字: ')
+	if word == 'q' :
+		break
+	if word in wc:
+		print(word, '出現次數為: ',wc[word])
+	else:
+		print('每有這個字')
+print ('thanks')	
